@@ -1,0 +1,288 @@
+.enlaces-header a:nth-child(3){
+    color: #ffbe0f;
+}
+/*Seccion enlace*/
+.section-enlaces{
+    margin-top: 100px;
+    font-size: 18px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #F0F0F0;
+}
+.section-enlaces a{
+    text-decoration: none;
+    color: #5D6678;    
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.section-enlaces a:nth-child(4){
+    cursor: auto;
+    color: #FF2418;
+}
+/*Seccion detalle*/
+.section_detalles{
+    margin: 40px 0 50px;
+    display: flex;    
+    justify-content: center;    
+}
+.section_detalle-img , .section_detalle-info{
+    width: 50%;
+}
+.section_detalle-img img{
+    width: 95%;    
+    border-radius: 10px;
+}
+.section_detalle-info{
+    padding: 0 25px;
+}
+.section_detalle-info span:nth-child(1), .section_detalle-info p{
+    color: #5D6678;
+}
+.section_detalle-info h2{
+    margin: 20px 0 15px;
+}
+.section_detalle-info .precio{    
+    color: #FF2418;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 15px 0 20px;
+    display: inline-block;
+}
+/*Boton MIN PLUS*/
+.cant-container{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;    
+    width: 150px;
+    height:50px;    
+    justify-content: center;    
+    
+}
+.cant-container span{
+    padding-top: 11px;
+    font-size: 24px;        
+    font-weight: bold;
+    user-select: none;
+    display: inline-block;
+    width: 50px;
+    color: #000;
+}
+.item-mas{
+    border-radius: 0 50% 50% 0;
+}
+.item-menos{
+    border-radius: 50% 0 0 50%;
+}
+.item-mas, .item-menos{
+    text-align: center;    
+    border: 1px solid #F1F2F2;    
+    width: 50px;
+    font-weight:bold;
+    height:50px;    
+    cursor: pointer;        
+}
+.item-mas:hover, .item-menos:hover{
+    background: #f82a1fde;
+    transition: ease-in-out 0.4s;
+}
+.item-mas:hover span{
+    color: #fff;
+}
+.item-menos:hover span{
+    color: #fff;
+}
+.item-cantidad{        
+    border: 1px solid #F1F2F2; 
+    background:#fff;    
+    width: 45px;   
+    height: 50px; 
+    text-align: center;
+    font-size: 18px;
+}
+.subtotal{
+    border:none;
+    text-align: center;
+}
+.item-salida p{
+    color: #5D6678;
+}
+.item-salida{
+    margin-top: 20px;
+}
+.item-salida input{
+    border: none;
+
+}
+/*Contenedor compra*/
+.container-compra{
+    display: flex;        
+    align-items: center;
+}
+.container-compra .cant-container{
+    margin-right: 20px;
+}
+.container-compra a{
+    text-decoration: none;
+    display: inline-block;
+    background: #FF2418;
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 20px;
+}
+.container-compra a:hover{
+    margin-top: -5px;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+    transition: ease-in-out 0.4s;
+}
+/*Productos Relacionados*/
+.section_relacion{
+    margin: 20px auto 50px;
+}
+.div_relacion-title{
+    text-align: center;
+}
+.div_relacion-title h2{
+    border-top: 1px solid #F0F0F0;
+    padding-top: 20px;
+    font-size: 20px;
+    font-weight: 300;
+}
+.div_relacion-title h3{
+    display: inline-block;
+    margin: 12px auto 30px;    
+    font-size: 28px;
+    font-weight: 500;
+    font-style: italic;
+    border-bottom: 3px solid #FF2418;
+}
+.list_productos{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.list_productos-plato{
+    width: 30%;    
+    text-align: justify;
+    overflow: hidden;
+    margin-bottom: 20px;
+    box-shadow: 0 0 7px 0 rgba(136, 136, 136, 0.15); 
+}
+.list_productos-plato img{
+    width: 100%;
+    padding: 10px 5px;
+}
+.productos-plato-img{
+    overflow: hidden;
+}
+.productos-plato-img img:hover{
+    transform: scale(1.05);
+    transition: all ease-in-out 0.6s;
+}
+.list_productos-opt{
+    margin-top: 7px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 5px;    
+}
+.list_productos-opt span{
+    color: #FF2418;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px auto;
+}
+.list_productos-opt a{
+    background: #FF2418;
+    color: #fff;
+    border: none;
+    padding: 8px 5px;
+    width: 130px;
+    cursor: pointer;
+    margin: 10px auto;    
+    border-radius: 15px;
+    text-decoration: none;    
+}
+.list_productos-opt a:hover{
+    background: #FFF;
+    color: #ff2418;
+    border: 0.2px solid #ff2418;    
+    transition: ease-in-out 0.5s;
+}
+@media screen and ( max-width: 900px){    
+    .section-enlaces a{        
+        font-size: 17px;
+    }
+    .section_detalle-info h2{
+        font-size: 20px;
+    }
+    .section_detalle-info .precio{            
+        font-size: 22px;        
+    }
+    .container-compra a{        
+        padding: 10px 15px;        
+    }
+    .cant-container{                
+        width: 150px;
+        height:30px;                        
+    }
+    .cant-container span{
+        padding-top: 5px;
+        font-size: 17px;                
+        width: 30px;        
+    } 
+    .item-mas, .item-menos{        
+        width: 30px;        
+        height:30px;         
+    }
+    .item-cantidad{                
+        width: 45px;   
+        height: 30px;         
+        font-size: 17px;
+    }
+}
+@media screen and ( max-width: 720px){  
+    .section_detalles{
+        flex-direction: column;     
+        align-items: center;
+        margin-top: 10px;
+    }
+    .section_detalle-img{
+        width: 90%;
+    }
+    .section_detalle-img img{
+        width: 100%;
+    }
+    .section_detalle-info{
+        width: 90%;        
+        margin-top: 20px;
+    }
+    .section-enlaces{
+        width: 90%;
+        margin: 90px auto 30px;
+    }
+    .list_productos{
+        justify-content: space-evenly;
+    }
+    .list_productos-plato{
+        width: 40%;  
+    }
+}
+@media screen and ( max-width: 570px){
+    .list_productos-plato{
+        width: 60%;  
+    }
+}  
+@media screen and ( max-width: 390px){    
+    .container-compra a{        
+        padding: 10px 10px;        
+        font-size: 14px;
+        text-align: center;
+    }
+    .list_productos-plato{
+        width: 75%;  
+    }
+    .list_productos-plato h3{
+        font-size: 16px;
+    }
+}

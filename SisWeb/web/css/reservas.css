@@ -1,0 +1,107 @@
+.content-header{
+    position: relative;    
+}
+.content-header img{
+    width: 100%;        
+}
+.text-header{
+    position: absolute;
+    top: 50%;    
+    margin-left: 10%;
+}
+.text-header h1{
+    color: #fff;    
+    font-size: 45px;
+    font-style: italic;    
+    border-bottom: 3px solid #FF2418;
+}
+.contenedor{
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden;    
+}
+.enlaces-header a:nth-child(4){
+    color: #ffbe0f;
+}
+/*FormReservas*/
+.form_reservas{
+    text-align: center;
+    margin: 40px auto 60px;
+    width: 80%;
+    display: flex;
+}    
+.form_reservas-mesa h2{
+    margin-bottom: 20px;
+}
+.form_reservas-mesa label{
+    display: inline-block;
+    width: 30%;
+    justify-content: space-between;
+    color: #5D6678;
+    margin-bottom: 15px;
+}
+.form_reservas-mesa input{
+    width: 30%;
+    justify-content: space-between;
+    background: #EFEFEF;
+    height: 35px;
+    border: 1px solid #DEDEDE;
+    border-radius: 5px;
+}
+.form_reservas-datos h2{
+    margin:40px 0 15PX;
+}
+.form_reservas-datos label{
+    display: inline-block;
+    width: 30%;
+    justify-content: center;
+    margin:18px 0 15px 0;
+    color: #5D6678;
+}
+.form_reservas-datos input,.form_reservas-datos textarea{
+    width: 92%;
+    background: #EFEFEF;
+    height: 35px;
+    border: 1px solid #DEDEDE;
+    border-radius: 5px;
+}
+.form_reservas-datos textarea{    
+    height: 150px;
+    resize: none;
+}
+.form_reservas-mesa input:active{
+    border: 2px solid #888;
+    border-radius: 5px;    
+}
+.form_reservas-datos input:active,.form_reservas-datos textarea:active{
+    border: 2px solid #888;
+    border-radius: 5px;    
+}
+@media screen and ( max-width: 900px){
+    .content-header{
+        height: 210px;
+        transition: all 0.4s;
+    }
+    .content-header img{
+        height: 100%;
+        transition: all 0.4s;
+    }
+    .text-header h1{
+        font-size: 40px;
+        transition: all 0.4s;
+    }
+
+}
+@media screen and ( max-width: 650px){
+    .text-header h1{
+        font-size: 35px;
+        transition: all 0.4s;
+    }
+}
+@media screen and ( max-width: 410px){
+    .text-header h1{
+        font-size: 30px;
+        transition: all 0.4s;
+    }
+}

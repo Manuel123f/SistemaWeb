@@ -1,0 +1,120 @@
+.content-header{
+    position: relative;    
+}
+.content-header img{
+    width: 100%;        
+}
+.text-header{
+    position: absolute;
+    top: 50%;    
+    margin-left: 10%;
+}
+.text-header h1{
+    color: #fff;    
+    font-size: 45px;
+    font-style: italic;    
+    border-bottom: 3px solid #FF2418;
+}
+.contenedor{
+    width: 95%;
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden;    
+}
+.enlaces-header a:nth-child(5){
+    color: #ffbe0f;
+}
+/*Enlaces*/
+.section-enlaces a:nth-child(2){
+    color: #FF2418;
+}
+.section-enlaces{
+    margin: 25px 0 30px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #F0F0F0;
+}
+.section-enlaces a{
+    text-decoration: none;
+    color: #5D6678;    
+    font-weight: 300;
+    font-size: 18px;
+}
+.section-enlaces a:nth-child(2){
+    cursor: auto;
+}
+/*tabla*/
+.section_tabla{
+    width: 100%;
+    margin: 10px 0 40px;
+    overflow-x: scroll;      
+}
+table{
+    width: 100%;
+    text-align: center;    
+    border: none;        
+    
+}
+table tr th{
+    background: #ef5350;
+    color: #fff;
+    padding: 10px 0;
+    font-weight: 400;
+    border: none;
+}
+tbody, tfoot{
+    color: #5D6678;
+    font-weight: 300;
+}
+tbody img{
+    width: 80%;    
+    height: 100px;
+}
+tbody .trash:hover{
+    color: #ef5350;    
+    transform: scale(1.2);
+    transition: ease-in-out 0.4s;
+}
+/*Seccion botones*/
+.section-btn{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+}
+.section-btn a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 30px;
+    background: #ef5350;
+    color: #fff;
+    border-radius: 20px;
+}
+@media screen and ( max-width: 900px){
+    .content-header{
+        height: 210px;
+        transition: all 0.4s;
+    }
+    .content-header img{
+        height: 100%;
+        transition: all 0.4s;
+    }
+    .text-header h1{
+        font-size: 40px;
+        transition: all 0.4s;
+    }
+    
+}
+@media screen and ( max-width: 650px){
+    .text-header h1{
+        font-size: 35px;
+        transition: all 0.4s;
+    }    
+}
+@media screen and ( max-width: 420px){
+    .text-header h1{
+        font-size: 30px;
+        transition: all 0.4s;
+    }    
+    .section-btn a{
+        padding: 10px 15px;
+    }
+}
